@@ -1,0 +1,74 @@
+.screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0C833D;
+    width: 50%;
+    height: 70vmin;
+    border-radius: 20px;
+    box-shadow: 1px 4px 13px 21px rgba(57, 255, 0, 0.2);
+    animation: 3s linear 0s infinite alternate screen_blink;
+      
+}
+
+body {
+    background-color: #443f4d;
+    display: flex;
+    justify-content: center;
+    margin-top: 10vmin;
+}
+
+.screen p {
+    color: #14F074;
+    margin: 4vmin;
+    font-size: 18px;
+}
+
+* {
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.scene_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    margin: 4vmin;
+    filter: sepia(50%) saturate(150%) hue-rotate(90deg) blur(0.8px);;
+    opacity: 0.6;
+    background-color: rgba(0, 128, 0, 0.2);
+
+}
+
+.buttons {
+    margin: auto;
+}
+
+button {
+    color: #14F074;
+    background: none;
+    outline: none;
+    border: none;
+    transition: 200ms;
+    font-size: 16px;
+}
+
+button:hover {
+    color: #0C833D;
+    background-color: #14F074;
+    cursor: pointer;
+}
+
+@keyframes screen_blink {
+    from {
+        box-shadow: 1px 4px 13px 21px rgba(57, 255, 0, 0.2);
+    }
+
+    to {
+        box-shadow: 1px 4px 40px 31px rgba(57, 255, 0, 0.2);
+    }
+}
